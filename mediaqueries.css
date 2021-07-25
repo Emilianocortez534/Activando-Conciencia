@@ -1,0 +1,26 @@
+@media (max-width: 1120px){
+
+        .slider .descripcion button {
+            margin-left: 168px;
+        }
+
+
+    
+}
+
+
+@media (max-width: 1050px){
+    .titulo .club{
+        margin-top: 68px;
+    }
+}
+
+@media (max-width: 1010px){
+    .slider .descripcion p{
+        margin-left: 86px;
+    }
+    .slider .descripcion button {
+        margin-left: 149px;
+    }
+
+}
