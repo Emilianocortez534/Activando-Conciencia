@@ -50,7 +50,7 @@ body{
     margin-left: 100px;
 }
 .titulo .club {
-    margin-top: 160px;
+    margin-top: 49px;
 }
 
 
@@ -74,6 +74,7 @@ body{
 .slider .descripcion {
     height: 100%;
     width: 100%;
+    margin-right: 20px;
 }
 .slider .descripcion h1 {
     font-size: 40px;
@@ -83,6 +84,12 @@ body{
     margin-left: 100px;
     
 }
+
+.slider .info__libro {
+    margin-top:-84px
+}
+
+
 
 .slider .slide.active .descripcion h1 {
     animation: captionText .5s ease forwards;
@@ -110,7 +117,7 @@ body{
     animation-delay: 1.2s;
 }
 .slider .descripcion p {
-    font-size: 15px;
+    font-size: 14px;
     color: white;
     margin: 0;
     margin-top: 20px;
@@ -182,7 +189,7 @@ body{
 .slider .indicador{
     position: absolute;
     left: 43%;
-    bottom: 30px;
+    bottom: 5px;
     z-index: 2;
     
 }
@@ -201,3 +208,5 @@ body{
 .slider .indicador div.active{
     background-color: #000000;
 }
+
+
