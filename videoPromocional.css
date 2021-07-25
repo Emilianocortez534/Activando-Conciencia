@@ -1,0 +1,22 @@
+.contenedor__videoInfo{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contenedor__videoInfo h2{
+    font-size: 30px;
+    color: #793134;
+}
+
+.contenedor__videoInfo p{
+    font-size: 18px;
+    margin-top: 30px;
+    
+}
+
+.contenedor__video{
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}

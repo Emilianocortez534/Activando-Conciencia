@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+}
+
+/* NAVEGADOR */
+.contendor__navegacion {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid #656565;
+
+
+}
+
+
+/* LOGO NAV */
+.logo__nav{
+    position: relative;
+    left: 20px;
+    
+}
+
+.logo__nav__img {
+    height: 68px;
+    width: 31px;
+}
+
+/* OPCIONES */
+
+.contenedor__navegacion__menu {
+    margin-right: 30px;
+}
+
+.contenedor__navegacion__menu > li{
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    padding: 14px 7px;
+}
+
+.contenedor__navegacion__menu > li > a {
+    display: block;
+    padding: 14px 6px;
+    font-size: 16px;
+}
+
+
+/*SUBMENU*/
+
+.submenu {
+    position: absolute;
+    background: white;
+    width: 100%;
+    display: none;
+    
+
+
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+
+
+/*Pseudonimos*/
+
+.contenedor__navegacion__menu li:hover .submenu{
+    display: block;
+}
+
+.contenedor__navegacion__menu li a:hover{
+    color: #793134;
+    transition: all .3s;
+}
+.contenedor__navegacion__menu li:hover {
+    color:  #793134;
+    transition: all .3s;
+}
+
+.menu__open::after {
+    content: "\f107";
+    font-family: fontawesome;
+    color: #656565;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    vertical-align: sub;
+    margin: 0 0 0 3px;
+}
+
+/* BOTON  DONAR */
+.button__donar {
+    border-radius: 50px;
+    box-shadow: 0px 1px 3px #8282826e;
+    position: relative;
+    padding: 11px 34px;
+    background-color: #793134;
+    cursor: pointer;
+    color: white!important;
+}
+
+/* BOTON DE NAV*/
+
+.button___nav {
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+    color: black;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: none;
+}

@@ -1,0 +1,66 @@
+#btn-mas{
+    display: none;
+}
+
+.contenedor__bar{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.icon__social a, .fa-plus{
+    display: block;
+    background:  #793134;
+    color: white;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+}
+
+
+.icon__social a:hover{
+    background: white;
+    color:  #793134;
+}
+
+.icon__social a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.fa-instagram{
+    font-size: 15px;
+}
+.fa-facebook-f{
+    font-size: 15px;
+}
+.fa-youtube{
+    font-size: 15px;
+}
+
+#btn-mas:checked~ .icon__social a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.fa-plus {
+    cursor: pointer;
+    background: #793134;
+    color: white;
+    font-size: 23px;
+}
+
+#btn-mas:checked~ .btn-mas .fa-plus{
+    transform: rotate(137deg);
+    font-size: 25px;
+}
+
+.btn-mas .fas {
+    line-height: 55px;
+}
