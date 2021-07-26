@@ -42,6 +42,9 @@
 .fa-youtube{
     font-size: 15px;
 }
+.fa-plus{
+    font-size: 15px;
+}
 
 #btn-mas:checked~ .icon__social a{
     margin-bottom: 10px;
