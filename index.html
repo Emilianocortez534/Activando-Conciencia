@@ -23,59 +23,98 @@
 </head>
 <body>
 <!--NAVEGADOR-->
-    <header>
-        
-        <nav class="contendor__navegacion">
-            <!--LOGO-->
-            <a href="#" class="logo__nav">
-                <img src="img/logo.png" alt="" class="logo__nav__img">
-            </a>
-            <!--Opciones-->
-            <ul class="contenedor__navegacion__menu">
-                <li><a href="#">INICIO</a></li>
-                <li class="menu__open">Progamas en Español
-                   <ul class="submenu">
-                        <li><a href="#">Bhakti Sadhana</a></li>
-                        <li><a href="#">Club del Libro</a></li>
-                        <li><a href="#">Cocina conciente</a></li>
-                        <li><a href="#">Estirando con Gandhini</a></li>
-                        <li><a href="#">Yoga con Markandeya</a></li>
-                        <li><a href="#">Bhakti Merienda</a></li>
-                        <li><a href="#">Banco de Preguntas</a></li>
-                        <li><a href="#">Ayudemos a Servir</a></li>
-                    </ul>
-                </li>
-                <li class="menu__open">English Programs
-                   <ul class="submenu">
-                        <li><a href="#">Bhakti Sadhana</a></li>
-                        <li><a href="#">The Book Club</a></li>
-                        <li><a href="#">Studying Srimad Bhagavatam</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="menu__open">Nuestro Equipo</a>
-                    <ul class="submenu">
-                        <li><a href="#">Contáctenos</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">Politica de privacidad</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Talentos y Servicios</a></li>
-                <button class="button__donar">
-                    Donar con Donor Box
-                </button>
-            </ul>
-        <!--Boton de nav-->
-            <div class="button___nav">
+    <header class="header">       
+        <div class="header__main">
+            <div class="logo">
+                <a href="#" class="logo__nav">
+                    <img src="img/logo.png" alt="" class="logo__nav__img">
+                </a>
+            </div>
+            <div class="overlay">
+
+            </div>
+            <!--NAV MENU-->
+            <nav class="nav__menu">
+                <div class="close__boton">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="menu">
+                    <li class="menu__items">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="menu__items menu-item-has-children">
+                        <a href="#" data-toggle="sub__menu">Programas en Español <i class="fas fa-sort-down"></i></a>
+                        <ul class="sub__menu">
+                            <li class="menu__items">
+                                <a href="#">Bhakti Sadhana</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Club del Libro</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Cocina conciente</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Estirando con Gandhini</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Yoga con Markandeya</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Bhakti Merienda</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Banco de Preguntas</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Ayudemos a Servir</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__items menu-item-has-children" >
+                        <a href="#" data-toggle="sub__menu">English Programs <i class="fas fa-sort-down"></i></a>
+                        <ul class="sub__menu">
+                            <li class="menu__items">
+                                <a href="#">Bhakti Sadhana</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">The Book Club</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Studying Srimad Bhagavatam</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__items menu-item-has-children" >
+                        <a href="#" data-toggle="sub__menu">Nuestro Equipo <i class="fas fa-sort-down"></i></a>
+                        <ul class="sub__menu">
+                            <li class="menu__items">
+                                <a href="#">Contáctenos</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">BLOG</a>
+                            </li>
+                            <li class="menu__items">
+                                <a href="#">Politica de privacidad</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__items">
+                        <a href="#">Talentos y Servicios</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="open__menu">
                 <i class="fas fa-bars"></i>
             </div>
-        </nav>
+        </div>    
     </header>
     <section class="slider">
         <div class="slider__contenedor">
             <div class="slide active" style="background-image: url(./img/background.jpg);">
                 <div class="contenedor">
                     <div class="titulo">
-                        <img src="./img/Activando Conciencia.jpg">
+                        <img src="./img/Activando Conciencia.jpg" class="slider1">
                         <div class="descripcion">
                             <h1>Activando Conciencia</h1>
                             <p class="estiloUnico">Activando Conciencia nos capacita para entendernos a nosotros mismos, para entender este mundo y nos capacita para vivir una vida transcendental</p>
@@ -208,6 +247,9 @@
             <a href="#">
                 <i class="fab fa-youtube"></i>
             </a>
+            <a href="#">
+                <i class="fas fa-donate"></i>
+            </a>
         </div>
         <div class="btn-mas">
             <label for="btn-mas">
@@ -233,6 +275,7 @@
             <iframe width="1080" height="608" src="https://www.youtube.com/embed/OAmTrIaUcLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
+<script src="navresponsive.js"></script>
 <script src="slider.js"></script>
 </body>
 </html>
