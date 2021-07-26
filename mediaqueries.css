@@ -1,5 +1,5 @@
 @media (max-width: 1120px){
-
+    /*SLIDER*/
         .slider .descripcion button {
             margin-left: 168px;
         }
@@ -10,12 +10,14 @@
 
 
 @media (max-width: 1050px){
+    /*SLIDER*/
     .titulo .club{
         margin-top: 68px;
     }
 }
 
 @media (max-width: 1010px){
+    /*SLIDER*/
     .slider .descripcion p{
         margin-left: 86px;
     }
@@ -23,4 +25,128 @@
         margin-left: 149px;
     }
 
+}
+@media (max-width: 980px) {
+    .titulo .slider1{
+        margin-top: 120px;
+    }
+    .titulo img{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 935px){
+    .slider .indicador{
+        left: 33%;
+    }
+}
+
+@media (max-width: 910px){
+    .titulo img{
+        display: none;
+    }
+    .slider .descripcion button{
+        margin-left: 269px;
+    }
+}
+
+
+@media (min-width: 860px){
+    /*NAV*/
+    .header .menu > .menu__items:hover > .sub__menu{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 860px){
+
+    /*NAV*/
+    .menu {
+        margin-top: 0;
+    }
+    .header .nav__menu {
+        position: fixed;
+        right: -280px;
+        visibility: hidden;
+        width: 280px;
+        height: 100%;
+        overflow-y: auto;
+        background-color: white;
+        top: 0;
+        z-index: 1000;
+        padding: 15px 0;
+        transition: all 0.5s ease;
+
+    }
+
+    .header .nav__menu.open{
+        visibility: visible;
+        right: 0;
+    }
+
+    .header .close__boton,
+    .header .open__menu{
+        display: flex;
+    }
+
+    .header .menu > .menu__items{
+        display: block;
+        padding: 12px 15px;
+        border-bottom: 1px solid #793134;
+        margin: 0;
+        
+    }
+
+    .header .menu > .menu__items > .sub__menu{
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        border: none;
+        box-shadow: none;
+        transform: translateY(0px);
+        padding: 0px;
+        left: auto;
+        top: auto;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .header .menu > .menu__items > .sub__menu > .menu__items > a{
+        padding: 12px 45px;
+        border-bottom: 1px solid #793134;
+    }
+}
+
+
+@media (max-width: 710px){
+    .slider .descripcion button {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 620px){
+    .slider .descripcion button {
+        margin-left: 150px;
+    }
+
+    .slider .indicador{
+        left: 25%;
+    }
+}
+
+@media (max-width: 510px){
+    .slider .descripcion h1{
+        margin-left: 70px;
+    }
+    .slider .descripcion p{
+        margin-left: 59px
+    }
+    .slider .descripcion .estiloUnico{
+        margin-left: 59px;
+    }
+    .slider .descripcion button {
+        margin-left: 100px;
+    }
 }
