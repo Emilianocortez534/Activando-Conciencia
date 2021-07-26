@@ -8,11 +8,15 @@ a{
     text-decoration: none;
     color: black;
 }
-
+body.hidden-scrolling{
+    overflow-y: hidden;
+}
 ul {
     list-style: none;
 }
-header{
+
+/*Header*/
+.header{
     position: fixed;
     left: 0;
     top: 0;
@@ -20,118 +24,118 @@ header{
     z-index: 1000;
     background: white;
 }
+/*LOGO*/
+.logo__nav img{
+    height: 68px;
+    width: 31px;
+    margin-left: 20px;
+}
 
-/* NAVEGADOR */
-.contendor__navegacion {
+/*HEADER-MAIN*/
+.header__main {
     justify-content: space-between;
     display: flex;
     margin-top: 10px;
-    text-align: center;
-    border-bottom: 1px solid #656565;
-
-
 }
 
-
-/* LOGO NAV */
-.logo__nav{
-    position: relative;
-    left: 20px;
-    
-}
-
-.logo__nav__img {
-    height: 68px;
-    width: 31px;
-}
-
-/* OPCIONES */
-
-.contenedor__navegacion__menu {
-    margin-right: 2px;
-}
-
-.contenedor__navegacion__menu > li{
+.header .menu > .menu__items{
     display: inline-block;
+    margin-left: 15px;
+    font-size: 16px;
     position: relative;
-    font-size: 16px;
-    padding: 14px 7px;
 }
 
-.contenedor__navegacion__menu > li > a {
+.header .menu > .menu__items> a{
     display: block;
-    padding: 14px 6px;
-    font-size: 16px;
-}
-
-
-/*SUBMENU*/
-
-.submenu {
-    position: absolute;
-    background: white;
-    width: 100%;
-    display: none;
-    
-
-
-}
-
-.submenu li a {
-    display: block;
-    padding: 15px;
-    color: black;
-    font-family: sans-serif;
-    font-size: 15px;
+    margin-right: 10px;
     
 }
 
-
-/*Pseudonimos*/
-
-.contenedor__navegacion__menu li:hover .submenu{
-    display: block;
+.header .menu > .menu__items> a .fa-sort-down{
+    pointer-events: none;
 }
 
-.contenedor__navegacion__menu li a:hover{
-    color: #793134;
-    transition: all .3s;
-}
-.contenedor__navegacion__menu li:hover {
-    color:  #793134;
-    transition: all .3s;
-}
-
-.menu__open::after {
-    content: "\f107";
-    font-family: fontawesome;
-    color: #656565;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 15px;
-    vertical-align: sub;
-    margin: 0 0 0 3px;
-}
-
-/* BOTON  DONAR */
-.button__donar {
-    border-radius: 50px;
-    box-shadow: 0px 1px 3px #8282826e;
-    position: relative;
-    padding: 11px 34px;
-    background-color: #793134;
-    cursor: pointer;
-    color: white!important;
-}
-
-/* BOTON DE NAV*/
-
-.button___nav {
-    align-items: center;
+.header .open__menu {
     font-size: 35px;
     cursor: pointer;
     color: black;
     margin-right: 10px;
     margin-top: 20px;
+    position: relative;
     display: none;
 }
+
+.menu{
+    margin-top: 50px;
+}
+
+.header .close__boton{
+    height: 40px;
+    width: 40px;
+    margin: 0 0 15px 15px;
+    display: none;
+    cursor: pointer;
+    transform: translateY(15px);
+}
+
+.fa-times {
+    font-size: 20px;
+}
+
+.header .menu > .menu__items > .sub__menu {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: white;
+    top: 100%;
+    padding: 10px 0;
+    border-top: 3px solid #793134;
+    transform: translateY(5px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .menu > .menu__items > .sub__menu > .menu__items{
+    display: block;
+}
+
+.header .menu > .menu__items > .sub__menu > .menu__items > a{
+    display: block;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.header .overlay{
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.header .overlay.active {
+    visibility:visible;
+    opacity: 1;
+}
+
+
+
+/*Pseodonimos*/
+
+.header .menu > .menu__items:hover,
+.header .menu > .menu__items:hover> a,
+.header .menu > .menu__items > .sub__menu > .menu__items > a:hover
+{
+    color: #793134;
+}
+
+
+
+
